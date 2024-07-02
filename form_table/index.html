@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Form Data</title>
+</head>
+<style>
+    .font{
+        display: block;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <!-- HTML + CSS + BOOTSTRAP + JS + DOM + ADJS -->
+     <!-- CRUD APP
+     C:CREATE >POST    > ADD DATA TO THE SERVER
+     R:READ   >GET     > RETRIVE DATA FROM THE SERVER
+     U:UPDATE >PUT     > MODIFY DATA
+     D:DELETE >DELETE  > DELETE DATA
+     
+     FB/INSTA/TITOK/LINKEDIN....ETC...
+
+     -->
+     <!-- <button onclick="getUserData()">GET ALL USER</button> -->
+      <div class="container mt-4 w-50 border p-4 mb-3">
+        <div class="input-group mb-3">
+          <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+          <input type="text" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1" id="inputFirstName">
+        </div>
+        <div class="input-group mb-3">
+            <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+            <input type="text" class="form-control" placeholder="Last Name" aria-label="Username" aria-describedby="basic-addon1" id="inputLastName">
+        </div>
+        <div class="input-group mb-3">
+          <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+          <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" id="inputEmail">
+        </div>
+        <div class="input-group mb-3">
+            <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+            <input type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1" id="inputAddress">
+        </div>
+        <div class="input-group mb-3">
+          <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+          <input type="text" class="form-control" placeholder="Pincode" aria-label="Username" aria-describedby="basic-addon1" id="inputPincode">
+        </div>
+        <label for="" class="font">Gender</label>
+        <div class="form-check form-check-inline">
+            
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline ">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female">
+            <label class="form-check-label" for="inlineRadio2" >Female</label>
+        </div>
+        <label for="" class="font" >Food</label>
+        <div class="form-check form-check-inline mb-2">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Biriyani" name="check">
+            <label class="form-check-label" for="inlineCheckbox1">Biriyani</label>
+        </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Chicken65" name="check">
+            <label class="form-check-label" for="inlineCheckbox2">Chicken65</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Thanthoori" name="check">
+            <label class="form-check-label" for="inlineCheckbox3">Thanthoori</label>
+        </div>
+          
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Prawn" name="check">
+            <label class="form-check-label" for="inlineCheckbox4">Prawn</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Manchurian" name="check">
+            <label class="form-check-label" for="inlineCheckbox5">Manchurian</label>
+        </div> 
+        <div class="input-group mb-3">
+            <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+            <input type="text" class="form-control" placeholder="State" aria-label="Username" aria-describedby="basic-addon1" id="inputState">
+        </div>
+        <div class="input-group mb-3">
+            <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+            <input type="text" class="form-control" placeholder="Country" aria-label="Username" aria-describedby="basic-addon1" id="inputCountry">
+        </div>
+        <button class="btn btn-success px-3 py-1" onclick="createUserData()">SUBMIT</button>
+      </div>
+      <!-- <button onclick="deleteUserData()">DELETE USER</button>
+     <button onclick="updateUserData()">UPDATE USER</button> -->
+     <table class="table text-center">
+        <thead id="thead">
+          
+        </thead>
+        <tbody id="tbody">
+                  
+        </tbody>
+      </table>
+      <script src="script.js"></script>
+</body>
+</html>
